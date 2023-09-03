@@ -6,3 +6,6 @@ catalogue.nagasweb.online
 
 [web]
 web.nagasweb.online
+
+[redis]
+redis.nagasweb.online
