@@ -43,12 +43,12 @@
     ansible.builtin.unarchive:
       src: /tmp/catalogue.zip
       dest: /app
-      remote_src: yes
+      remote_src: yes # file already exists on remote machine otherwise it will chek on anisble machine
 
   - name: install dependencies
     ansible.builtin.command: npm install
     args:
-      chdir: /app
+      chdir: /app # change directory and run the command
 
   - name: copy catalogue service
     ansible.builtin.copy:
