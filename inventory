@@ -9,3 +9,6 @@ web.nagasweb.online
 
 [redis]
 redis.nagasweb.online
+
+[user]
+user.nagasweb.online
