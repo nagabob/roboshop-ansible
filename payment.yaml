@@ -5,7 +5,7 @@
 
   - name: Install python
     ansible.builtin.yum:
-      name: python
+      name: python36
       state: installed
 
   - name: Install gcc
