@@ -34,14 +34,14 @@
       path: /app
       state: directory
 
-  - name: download cart artifact
+  - name: download shipping artifact
     ansible.builtin.get_url:
       url: https://roboshop-builds.s3.amazonaws.com/shipping.zip
       dest: /tmp
 
-  - name: extract cart artifact
+  - name: extract shipping artifact
     ansible.builtin.unarchive:
-      src: /tmp/cart.zip
+      src: /tmp/shipping.zip
       dest: /app
       remote_src: yes # file already exists on remote machine otherwise it will chek on anisble machine
 
