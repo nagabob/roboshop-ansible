@@ -21,3 +21,6 @@ mysql.nagasweb.online
 
 [shipping]
 shipping.nagasweb.online
+
+[rabbitmq]
+rabbitmq.nagasweb.online
